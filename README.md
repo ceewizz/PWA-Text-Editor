@@ -42,5 +42,30 @@ THEN I should have my static assets pre cached upon loading along with subsequen
 WHEN I deploy to Render
 THEN I should have proper build scripts for a webpack application
 
+## Installation 
+Node.js and npm packages
+IndexedDB to store packages
 
-Links: https://github.com/ceewizz/PWA-Text-Editor
+## Instructions
+npm install express
+npm install webpack-dev-server --save-dev
+npm install --save-dev webpack
+npm install --save-dev webpack-pwa-manifest
+npm install babel
+npm install --save-dev css-loader
+npm install concurrently
+npm install idb
+
+## Screenshots 
+
+![alt text](<Screenshot 2024-02-29 202409.png>)
+ ![alt text](<Screenshot 2024-02-29 202416.png>)
+ ![alt text](<Screenshot 2024-02-29 202706.png>)
+
+## Credits
+Made by Chris Huynh
+
+## Links
+Github Repo: https://github.com/ceewizz/PWA-Text-Editor
+Deployed App:  https://pwatexteditor-cwz-e3c67fb4c29e.herokuapp.com/
+
