@@ -1,0 +1,40 @@
+{
+  "name": "jate",
+  "version": "1.0.0",
+  "description": "A text editor that runs in the browser meeting PWA criteria and feature a number of persistence techniques, and will be able to run offline",
+  "main": "server.js",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd client && npm install",
+    "client": "cd client && npm start"
+  },
+  "keywords": [],
+  "author": "Chris Huynh",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "express": "^4.18.3",
+    "idb": "^8.0.0",
+    "if-env": "^1.0.4"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "css-loader": "^6.10.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^5.90.3",
+    "webpack-dev-server": "^5.0.2",
+    "webpack-pwa-manifest": "^4.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceewizz/PWA-Text-Editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ceewizz/PWA-Text-Editor/issues"
+  },
+  "homepage": "https://github.com/ceewizz/PWA-Text-Editor#readme"
+}
